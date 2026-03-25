@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hava Durumu Uygulaması</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            background: #f0f2f5;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .info {
+            margin-top: 20px;
+        }
+
+        .temp {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .desc {
+            text-transform: capitalize;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Şehir/Ülke adı girin...">
+            <button id="searchBtn">Sorgula</button>
+        </div>
+
+        <div class="info" id="weatherResult" style="display: none;">
+            <h2 id="cityName">--</h2>
+            <h3 id="date">--</h2>
+
+            <div class="main-display">
+                <img id="wIcon" src="" alt="">
+                <div class="temp"><span id="degree"></span>°C</div>
+            </div>
+
+            <p class="desc" id="description">--</p>
+
+            <hr>
+
+            <div class="details-grid">
+                <div class="detail-item">
+                    <span>Hissedilen:</span>
+                    <b id="feelsLike">--</b>°C
+                </div>
+                <div class="detail-item">
+                    <span>Nem:</span>
+                    %<b id="humidity">--</b>
+                </div>
+                <div class="detail-item">
+                    <span>Rüzgar:</span>
+                    <b id="windSpeed">--</b> m/s
+                </div>
+                <div class="detail-item">
+                    <span>Basınç:</span>
+                    <b id="pressure">--</b> hPa
+                </div>
+            </div>
+
+            <hr>
+
+            <b id="fishingStatus">Veri bekleniyor...</b>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
