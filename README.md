@@ -23,8 +23,7 @@ WeatherCast is a functional and real-time weather web application designed speci
 
 ## 📸 Preview
 
-![App Screenshot](<img width="451" height="709" alt="image" src="https://github.com/user-attachments/assets/14ca10a4-eccf-47df-957a-ac7c8852c354" />
-) 
+![App Screenshot](./weatherapi_image.png) 
 
 ## ⚙️ Installation & Usage
 
